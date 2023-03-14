@@ -8,18 +8,18 @@ var sex = "Kobieta";
 // zweryfikuj dane
 // 1. "Kobieta poniżej 30 lat"
 
-if (sex == "Kobieta" && age < 30) ;
+if (sex == "Kobieta" && age < 30) 
 {
     Console.WriteLine("Kobieta poniżej 30 lat");
-};
+}
 
 
 // 2. Ewa, lat 33
 
-if (name == "Ewa" && age == 33) ;
+if (name == "Ewa" && age == 33) 
 {
     Console.WriteLine("Ewa,lat 33");
-};
+}
 
 
 // 3. Niepełnoletni mężczyzna
