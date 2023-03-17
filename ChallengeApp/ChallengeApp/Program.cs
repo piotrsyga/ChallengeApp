@@ -1,91 +1,28 @@
-﻿// Przygotuj program, który policzy ile jakich cyfr
-// występuje w podanej liczbie:
-//
-// Przykład:
-// Wyniki dla liczby: 4566
-// 0 => 0
-// 1 => 0
-// 2 => 0
-// 3 => 0
-// 4 => 1
-// 5 => 1
-// 6 => 2
-// 7 => 0
-// 8 => 0
-// 9 => 0
+﻿    Employee employee1 = new Employee();
+    Employee employee2 = new Employee("Agnieszka", "Kowalska");
+    Employee employee3 = new Employee("Zuzia", "Michalczyk", "23");
 
+    employee1.AddScore(5); employee1.AddScore(4); employee1.AddScore(2); employee1.AddScore(6); employee1.AddScore(3);
+employee2.AddScore(5); employee2.AddScore(4); employee2.AddScore(6); employee2.AddScore(5); employee2.AddScore(8);
+employee3.AddScore(7); employee3.AddScore(7); employee3.AddScore(9); employee3.AddScore(5); employee3.AddScore(4);
+var result = employee3.Result;
 
-int number = 4566;
-string numberAsString = number.ToString();
-char[] letters = numberAsString.ToCharArray();
-int counter0 = 0;
-int counter1 = 0;
-int counter2 = 0;
-int counter3 = 0;
-int counter4 = 0;
-int counter5 = 0;
-int counter6 = 0;
-int counter7 = 0;
-int counter8 = 0;
-int counter9 = 0;
-int counter = 10;
+    Console.WriteLine(result);
 
-
-
-foreach (char letter in letters)
-{
-    if (letter == '0')
+if (result<25)
     {
-        counter0++;
-    }
-    else if (letter == '1')
-    {
-        counter1++;
-    }
-    if (letter == '2')
-    {
-        counter2++;
-    }
-    else if (letter == '3')
-    {
-        counter3++;
-    }
-    if (letter == '4')
-    {
-        counter4++;
-    }
-    else if (letter == '5')
-    {
-        counter5++;
-    }
-    if (letter == '6')
-    {
-        counter6++;
-    }
-    else if (letter == '7')
-    {
-        counter7++;
-    }
-    if (letter == '8')
-    {
-        counter8++;
-    }
-    else if (letter == '9')
-    {
-        counter9++;
-    }
-
-
+    Console.WriteLine("Jestem Adam Nowak, mam, 22 lata i 20 pkt.");
 }
-Console.WriteLine("Zadanie Domowe, dzień 5");
-Console.WriteLine("Wskaż, ile razy poszczególne cyfry, występują w cyfrze 4566:");
-Console.WriteLine("0="+ counter0);
-Console.WriteLine("1=" + counter1);
-Console.WriteLine("2=" + counter2);
-Console.WriteLine("3=" + counter3);
-Console.WriteLine("4=" + counter4);
-Console.WriteLine("5=" + counter5);
-Console.WriteLine("6=" + counter6);
-Console.WriteLine("7=" + counter7);
-Console.WriteLine("8=" + counter8);
-Console.WriteLine("9=" + counter9);
+else if (result < 35)
+{
+    Console.WriteLine("Jestem Zuzia Michalczyk, mam 23 lata i 32 pkt.");
+}
+if (result < 30)
+{
+    Console.WriteLine("Jestem Agnieszka Kowalska, mam 25 lat i 28 pkt. ");
+}
+else if (result > 30)
+{
+    Console.WriteLine("Gratulujemy zwycięstwa, Pani Zuzannie Michalczyk");
+}
+
